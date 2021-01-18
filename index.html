@@ -106,6 +106,58 @@
           padding: 3.5rem 0 18rem;
         }
       }
+
+      a {
+        color: #ff4b67;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .title {
+        color: #ff4b67;
+      }
+      .sub-title {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .floating-document {
+        background-color: transparent;
+        position: absolute;
+        top: 10rem;
+        width: 100%;
+      }
+      .document-body {
+        background-color: white;
+        padding: 16px 16px;
+        padding: 1rem 1rem;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+          0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        text-align: justify;
+      }
+      @media (min-width: 48em) {
+        .sub-title {
+          font-weight: bold;
+          font-size: 16px;
+        }
+        .document-body {
+          padding: 16px 48px;
+          padding: 1rem 3rem;
+          margin-bottom: 1rem;
+        }
+        .paragraph {
+          font-size: 18px;
+        }
+        .header-wrapper--privacy {
+          padding: 56px 0 304px;
+          padding: 3.5rem 0 19rem;
+        }
+      }
+      @media (min-width: 61.25em) {
+        .document-body {
+          padding: 16px 48px;
+          padding: 1rem 6rem;
+          margin-bottom: 1rem;
+        }
+      }
     </style>
   </head>
 
@@ -142,6 +194,28 @@
           </div>
         </div>
       </header>
+      <main id="main">
+        <div class="floating-document">
+          <div class="content document-body">
+            <section>
+              <div class="u-center-elements">
+                <h1 class="title title--size-2">Atenção!</h1>
+              </div>
+              <p class="paragraph">
+                O app Payly, que estava disponível nas lojas de aplicativos do seu celular, não terá mais atualizações. Sendo assim, a partir do dia 19/01/2021 você não conseguirá mais fazer login e acessar as funções da sua carteira digital Payly.
+              </p>
+
+              <p class="paragraph">
+                Caso ainda tenha saldo disponível no app, instruímos para que entrem até a data limite informada acima e utilize os valores em Recarga de Celular, Pagamento de Contas ou faça uma TED para uma conta de sua titularidade.
+              </p>
+
+              <p class="paragraph">
+                Em caso de dúvidas, contate-nos através do nosso canal de atendimento contab2c@payly.com.br
+              </p>
+            </section>
+          </div>
+        </div>
+      </main>
     </div>
     <!-- END HEADER -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
